@@ -1,13 +1,13 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Me | Simple Website</title>
+    <title>About Me | Portfolio site</title>
 </head>
 <body>
 
 <header>
-    <h1>About Me</h1>
+    <h1>About Us</h1>
 
     <nav>
         <ul>
@@ -20,4 +20,15 @@
 
 <main>
 
-   
+    <section>
+        <h2>Me!</h2>
+        <p>
+            I have always loved creating, whether it be taking photographs, or creating art. My passion for photography started in high school and has grown ever since.
+        </p>
+    </section>
+
+
+
+</body>
+</html>
+

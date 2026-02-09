@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Portfolio site</title>
+</head>
+<body>
+
+<header>
+    <h1>Contact Me!</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>My Contacts</h2>
+        <p>
+            I am avalible through email: cecila.rice@msj.edu or you can follow my photography account on instagram @cecis.snapshots
+        </p>
+    </section>
+
+   
+
+</main>
+
+
+</body>
+</html>

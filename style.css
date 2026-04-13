@@ -56,3 +56,12 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
+img {
+    max-width: 300px;      
+    height: auto;          
+    border-radius: 50%;    
+    border: 5px solid #3498db;
+    display: block;        
+    margin: 20px auto; 
+}

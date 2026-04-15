@@ -9,8 +9,8 @@ body {
 header {
   position: sticky;
   top: 0;
-  background-color: #063619; 
-  color: dark green;
+  background-color: #6DBFB3; 
+  color: teal;
   text-align: center;
   padding: 15px 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);

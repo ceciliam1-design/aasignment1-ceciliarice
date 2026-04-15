@@ -1,7 +1,7 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
-  background-color: #eef4fb; 
+  background-color: #FCE8F8; 
   margin: 0;
   padding: 0;
 }
@@ -9,8 +9,8 @@ body {
 header {
   position: sticky;
   top: 0;
-  background-color: #1e3a5f; 
-  color: white;
+  background-color: #CDFAF0; 
+  color: light green;
   text-align: center;
   padding: 15px 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);

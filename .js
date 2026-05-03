@@ -45,3 +45,16 @@ if (contactForm) {
         }
     });
 }
+const toggleBtn = document.getElementById('toggle-mode');
+
+if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('low-exposure');
+
+        if (document.body.classList.contains('low-exposure')) {
+            toggleBtn.textContent = 'Switch to Normal Mode';
+        } else {
+            toggleBtn.textContent = 'Switch to Low Exposure';
+        }
+    });
+}

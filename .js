@@ -21,16 +21,19 @@ navLinks.forEach(link => {
 
 if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        
-        const isDark = document.body.classList.contains('dark-mode');
-        toggleBtn.textContent = isDark ? 'Switch to Normal Mode' : 'Switch to Low Exposure';
+        document.body.classList.toggle('low-exposure');
+
+        if (document.body.classList.contains('low-exposure')) {
+            toggleBtn.textContent = 'Switch to Normal Mode';
+        } else {
+            toggleBtn.textContent = 'Switch to Low Exposure';
+        }
     });
 }
 
 if (contactForm) {
     contactForm.addEventListener('submit', (event) => {
-        event.preventDefault();
+        event.preventDefault(); 
         
         const nameValue = document.getElementById('user-name').value;
         const emailValue = document.getElementById('user-email').value;
@@ -42,19 +45,6 @@ if (contactForm) {
             formStatus.textContent = "Thank you, Cecilia will get back to you soon!";
             formStatus.className = 'success-text';
             contactForm.reset(); 
-        }
-    });
-}
-const toggleBtn = document.getElementById('toggle-mode');
-
-if (toggleBtn) {
-    toggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('low-exposure');
-
-        if (document.body.classList.contains('low-exposure')) {
-            toggleBtn.textContent = 'Switch to Normal Mode';
-        } else {
-            toggleBtn.textContent = 'Switch to Low Exposure';
         }
     });
 }

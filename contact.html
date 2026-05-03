@@ -1,5 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Cecilia Rice Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Get in Touch</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
 <main>
-    <div class="content">
+    <div class="content"> <!-- This div is the "magic" that fixes the mess -->
         <section>
             <h2>My Contacts</h2>
             <p>
@@ -22,7 +42,7 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit" class="btn-submit">Send Message</button>
             </form>
             <p id="form-status"></p>
         </section>
@@ -30,3 +50,7 @@
         <button id="toggle-mode">Switch to Low Exposure</button>
     </div>
 </main>
+
+<script src="script.js"></script>
+</body>
+</html>

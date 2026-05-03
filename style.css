@@ -199,3 +199,7 @@ input:focus, textarea:focus {
     width: 100%;
     font-size: 0.8rem;
 }
+
+.error-text { color: #d9534f; font-weight: bold; }
+.success-text { color: #5cb85c; font-weight: bold; }
+  

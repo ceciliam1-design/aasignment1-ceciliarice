@@ -6,7 +6,7 @@ const contactForm = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 
 if (profileImg) {
-    profileImg.addEventListener('click', function() {
+    profileImg.addEventListener('click', () => {
         profileImg.classList.toggle('image-highlight');
         if (mainHeading) {
             mainHeading.textContent = "Thanks for visiting, I'm Cecilia!";
@@ -22,29 +22,24 @@ navLinks.forEach(link => {
 if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
         document.body.classList.toggle('low-exposure');
-
-        if (document.body.classList.contains('low-exposure')) {
-            toggleBtn.textContent = 'Switch to Normal Mode';
-        } else {
-            toggleBtn.textContent = 'Switch to Low Exposure';
-        }
+        const isLow = document.body.classList.contains('low-exposure');
+        toggleBtn.textContent = isLow ? 'Switch to Normal Mode' : 'Switch to Low Exposure';
     });
 }
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (event) => {
-        event.preventDefault(); 
-        
-        const nameValue = document.getElementById('user-name').value;
-        const emailValue = document.getElementById('user-email').value;
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('user-name').value;
+        const email = document.getElementById('user-email').value;
 
-        if (nameValue.trim() === "" || emailValue.trim() === "") {
-            formStatus.textContent = "Please fill out all required fields.";
-            formStatus.className = 'error-text'; 
+        if (!name.trim() || !email.trim()) {
+            formStatus.textContent = "Please fill out all fields.";
+            formStatus.className = 'error-text';
         } else {
-            formStatus.textContent = "Thank you, Cecilia will get back to you soon!";
+            formStatus.textContent = "Thank you! Cecilia will reply soon.";
             formStatus.className = 'success-text';
-            contactForm.reset(); 
+            contactForm.reset();
         }
     });
 }
